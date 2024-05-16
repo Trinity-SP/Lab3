@@ -33,8 +33,16 @@ def bubble_sort(arr, sorting_order):
                 else:
                     # Return an empty array
                     arr_result = []
+    elif n >= 10:
+        return 1   # REQ-03 -> Ex 2
+    
+    elif n == 0:
+        return 0   # REQ-04 -> Ex 2
+
     else:
-        arr_result = -1
+        for value in arr_result:
+            if isinstance(value, int) == False:
+                return 2   # REQ-05 -> Ex 2
 
     return arr_result
 
